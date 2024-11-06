@@ -56,8 +56,8 @@ function qouteOfDay() {
 
    if(random != lastRandom){
     lastRandom = random;
-      quoteAuth.innerHTML = quotes[random].author;
-      mainQuote.innerHTML = quotes[random].quote;
+      quoteAuth.innerHTML = `<span class="fw-bolder">Author: </span>  ${quotes[random].author}`;
+      mainQuote.innerHTML = `<span class="fw-bolder">Quote: </span>  ${quotes[random].quote}`;
    }else{
     qouteOfDay();
    }
